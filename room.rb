@@ -1,6 +1,6 @@
 require('pry-byebug')
-require_relative('karaoke_playlist')
-require_relative('karaoke_guest')
+require_relative('song')
+require_relative('guest')
 
 
 class Room

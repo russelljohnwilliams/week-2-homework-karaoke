@@ -1,6 +1,5 @@
 
-require_relative('karaoke_playlist')
-# require_relative('karaoke_room')
+require_relative('song')
 
 require('pry-byebug')
 

@@ -1,7 +1,5 @@
 require('minitest/autorun')
-require_relative('../karaoke_guest.rb')
-require_relative('../karaoke_playlist.rb')
-require_relative('../karaoke_room')
+require_relative('../guest.rb')
 
 class TestGuest < Minitest::Test
 
