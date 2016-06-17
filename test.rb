@@ -17,8 +17,12 @@ require('pry-byebug')
 # check out of room
 
 
+kaz room
+def check_in_a_guest()
+  @room << @guest
+end
 
-
+@guest = Guest.new(name, wallet)
 
 
 

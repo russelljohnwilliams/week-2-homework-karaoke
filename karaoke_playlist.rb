@@ -1,3 +1,7 @@
+require('pry-byebug')
+# require_relative('karaoke_room')
+# require_relative('karaoke_guest')
+
 class Playlist
 
 attr_reader(:song_title, :artist)
