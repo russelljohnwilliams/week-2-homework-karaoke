@@ -14,18 +14,21 @@ class TestRoom < Minitest::Test
 
     @available_songs = [do_the_strand, angel_eyes, hit_the_north, a_little_respect]
 
-    @room = Room.new()
+    @grace = Guest.new("Grace", 750)
+    @horatio = Guest.new("Horatio", 350)
+
+    @room = Room.new( "gold rooms" )
   end
 
-  def test_playlist_has_artist
-    playlist = Playlist.new("Do the Strand", "Roxy Music")
-    assert_equal("Roxy Music", playlist.artist)
-  end
 
   def test_amount_of_guests_when_room_empty
-    assert_equal([nil], @room.check_in_guest())
+    assert_equal(0, @room.guests.length)
   end
 
+  def test_amount_of_guests
+    @room.check_in_guest(@grace)
+    assert_equal(1, @room.guests.length)
+  end
 
 end
 
