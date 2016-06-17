@@ -13,6 +13,4 @@ class Testplaylist < Minitest::Test
     assert_equal("Do the Strand", playlist.song_title)
   end
 
-
-
 end
