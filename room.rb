@@ -5,7 +5,7 @@ require_relative('guest')
 
 class Room
 
-attr_reader(:guests)
+attr_reader(:guests, :songs)
 
   def initialize(name)
     @guests = []
@@ -17,8 +17,11 @@ attr_reader(:guests)
   def check_in_guest(guest)
     @guests << guest
   end
-   
 
+  def add_a_song(song)
+    @songs << song
+  end
+  
 
 end
 
