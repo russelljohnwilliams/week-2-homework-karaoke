@@ -34,19 +34,22 @@ class TestRoom < Minitest::Test
       assert_equal(2, @room.guests.length)
   end
 
-  def test_check_out_a_guest_by_index
-    
-#I triedwriting a test for this but I don't know what to put, I know the method works though.
-  end
+  # def test_check_out_a_guest_by_index
+  #   #I tried writing a test for this but I don't know what to put, I know the method works though.
+  # end
+
+
 
   def test_amount_of_songs_when_empty
     assert_equal(0, @room.songs.length)
   end
 
   def test_amount_of_songs
-    @room.add_a_song(@a_little_respect)
+    @room.add_a_song(@topsy, @a_little_respect)
     assert_equal(1, @room.songs.length)
   end
+
+
 
 end
 

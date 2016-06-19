@@ -9,7 +9,7 @@ attr_reader(:guests, :songs)
 
   def initialize(name)
     @guests = []
-    @songs = []
+    @songs= []
     @name = name
 
   end
@@ -39,9 +39,11 @@ attr_reader(:guests, :songs)
   end
        
 
-  def add_a_song(song)
-    @songs << song
-  end
+ def add_a_song(guest, song)
+   hash = {}
+   hash["guest"] = "song"
+   @songs.push hash
+ end
 
 
 
