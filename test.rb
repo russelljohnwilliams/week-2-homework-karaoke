@@ -1,4 +1,4 @@
-# require('pry-byebug')
+require('pry-byebug')
 # @guests = []
 # puts "\n------------"
 # print "This is the first array\n#{@guests}"
@@ -29,17 +29,61 @@
 
 @songs = []
 
+# def add_a_song(guest, song)
+#   hash = {}
+#   hash["guest"] = "song"
+#   @songs << hash
+# end
+
 def add_a_song(guest, song)
   hash = {}
-  hash["guest"] = "song"
-  @songs << hash
+  hash["name"] = guest
+  hash["song"] = song
+  @songs.push hash
 end
 
 add_a_song("topsy", "mr pharmacist")
 
 print @songs
+# @array = [{:deb => "song1"}, {:deb => "song2"}, {:fritz => "nothing"}]
 
 
+
+# def pets_by_breed(name)
+#   # binding.pry
+#   result = []
+#     for song in @array
+#       if 
+#         :key == name
+#         result.push song
+#       end
+#     end
+#   print result
+# end
+
+
+# pets_by_breed(:deb)
+
+
+
+
+
+
+
+
+
+# def song(name)
+# result = @array.each{|key, value| key == name}
+# print result
+# end
+
+# def pets_by_breed(pet_shop, breed)
+#   matches = []
+#   for pet in pets_in_stock(pet_shop)
+#     matches << pet if(pet[:breed] == breed)
+#   end
+#   return matches
+# end
 
 
 

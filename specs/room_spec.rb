@@ -38,8 +38,6 @@ class TestRoom < Minitest::Test
   #   #I tried writing a test for this but I don't know what to put, I know the method works though.
   # end
 
-
-
   def test_amount_of_songs_when_empty
     assert_equal(0, @room.songs.length)
   end
@@ -49,7 +47,7 @@ class TestRoom < Minitest::Test
     assert_equal(1, @room.songs.length)
   end
 
-
+  
 
 end
 
