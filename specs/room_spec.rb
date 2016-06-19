@@ -13,7 +13,11 @@ class TestRoom < Minitest::Test
     @topsy = Guest.new("Topsy", 250)
     @tim = Guest.new("tim", 50)
 
-    @songs_sung = [{:name => "jo", :song => "relax"}, {:name => "jo", :song => "pipes_of_peace"}, {:name => "fritz", :song => "panic"}]
+    # @songs_sung = [
+    #   {:name => "jo", :song => "relax"}, 
+    #   {:name => "jo", :song => "pipes_of_peace"}, 
+    #   {:name => "fritz", :song => "panic"}
+    # ]
 
     @room = Room.new( "Franks wild room" )
   
@@ -30,8 +34,8 @@ class TestRoom < Minitest::Test
   end
 
   def test_for_a_party_of_guests
-      @room.check_in_party_of_guests(@grace, @horatio)
-      assert_equal(2, @room.guests.length)
+    @room.check_in_party_of_guests(@grace, @horatio)
+    assert_equal(2, @room.guests.length)
   end
 
   # def test_check_out_a_guest_by_index

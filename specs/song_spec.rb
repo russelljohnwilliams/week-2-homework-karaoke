@@ -2,7 +2,6 @@ require('minitest/autorun')
 require_relative('../song.rb')
 require_relative('../room')
 require_relative('../guest')
-# require_relative('../playlist')
 
 class TestSong < Minitest::Test
 
@@ -11,10 +10,6 @@ class TestSong < Minitest::Test
     angel_eyes = Song.new("angel_eyes", "Roxy Music") 
     hit_the_north = Song.new("Hit the North", "The Fall")
     a_little_respect = Song.new("A Little respect", "Erasure")
-
-    # collection = [do_the_strand, angel_eyes, hit_the_north, a_little_respect ]
-
-    # @playlist = Playlist.new(collection)
 
   end
 
