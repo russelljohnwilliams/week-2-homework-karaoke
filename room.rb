@@ -46,18 +46,20 @@ attr_reader(:guests, :songs)
    @songs.push hash
  end
 
- def add_number_of_songs_sung_to_customer()
-  #search @songs by customer name
-  #count number of songs sung
-  #add number to customer songbook
-
-  #--------- or ---------
-
+ def number_of_songs_guest_has_sung(name)
   #search @ songs by customer name
-  #add the song titles to customer songbook
-  # find amount by .length
+    result = []
+      for song in @array
+        if 
+          song[:name] == name
+          result.push song
+        end
+      end
+      # find amount by .length
+    @number_of_songs = result.length
+  end
+ #add amount to customer songbook (need to do this still)
+
  end
 
-
-end
 

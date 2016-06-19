@@ -13,9 +13,9 @@ class TestRoom < Minitest::Test
     @topsy = Guest.new("Topsy", 250)
     @tim = Guest.new("tim", 50)
 
-  
+    @songs_sung = [{:name => "jo", :song => "relax"}, {:name => "jo", :song => "pipes_of_peace"}, {:name => "fritz", :song => "panic"}]
 
-    @room = Room.new( "gold rooms" )
+    @room = Room.new( "Franks wild room" )
   
   end
 
@@ -42,12 +42,18 @@ class TestRoom < Minitest::Test
     assert_equal(0, @room.songs.length)
   end
 
-  def test_amount_of_songs
+  def test_add_a_song
     @room.add_a_song(@topsy, @a_little_respect)
     assert_equal(1, @room.songs.length)
   end
 
-  
+#again, spending too long trying to write a test.
+  # def test_number_of_songs_guest_has_sung
+  #   @songs_sung
+  #   @room.test_number_of_songs_guest_has_sung("jo")
+  #   assert_equal(2)
+  # end
+
 
 end
 
